@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+:root{
+    --background: #EDF2F4;
+    --button: #EF233C;
+    --light-text: #8D99AE;
+    --dark-text: #2B2D42;
+}
+
+html,body{
+    margin: 0;
+    padding: 0 5px;
+    background-color: var(--background);
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+img{
+    width: 250px;
+    margin: 0 auto;
+}
+
+input,button{
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+input{
+    margin: 20px 0;
+    border: 2px solid var(--light-text);
+}
+
+button{
+    background-color: var(--button);
+    color: var(--background);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:active{
+    box-shadow: 0px 0px 10px inset #2b2d4297;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    /* border: 1px solid red; */
+}
+
+ul li{
+    padding: none;
+    margin: none;
+    padding: 10px 20px;
+    flex-grow: 1;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    color: var(--dark-text);
+    cursor: pointer;
+    box-shadow: 0px 2px 5px -3px var(--dark-text);
+}
+
+ul li:active{
+    box-shadow: 0px 2px 5px -3px inset var(--dark-text);
+}
